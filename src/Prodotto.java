@@ -12,7 +12,7 @@ public class Prodotto {
         this.Descrizione=Descrizione;
         Random rand = new Random();
         this.Codice = rand.nextInt(90000) + 10000;
-        this.Prezzo=prezzo;
+        this.Prezzo= prezzo;
         this.iva=iva;
     }
      public int getPrezzo (){
@@ -23,7 +23,7 @@ public class Prodotto {
      }
 
      public String venduta(){
-        return Codice + "-" + Nome + " " + Descrizione;
+        return Codice + "-" + Nome;
      }
     }
 
