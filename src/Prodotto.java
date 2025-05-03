@@ -1,6 +1,6 @@
 import java.util.Random;
 
-// inserimento variabili
+// inserimento attributi
 public class Prodotto {
    public String Nome;
    public String Descrizione;
@@ -8,7 +8,7 @@ public class Prodotto {
    public double Prezzo;
    public double iva;
 
-   // inserimento del this per associare il prodotto
+   // creazione del costruttore
    public Prodotto(String Nome, String Descrizione, int Codice, double prezzo, double iva) {
       this.Nome = Nome;
       this.Descrizione = Descrizione;
@@ -32,5 +32,10 @@ public class Prodotto {
    // inserimento stringa codice prodotto piu nome del Prodotto
    public String venduta() {
       return Codice + "-" + Nome;
+   }
+
+   // inserimento metodo per la descrizione
+   public String getDescrizione() {
+      return Descrizione;
    }
 }
