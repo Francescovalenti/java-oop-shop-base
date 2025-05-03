@@ -13,7 +13,7 @@ public class Prodotto {
       this.Nome = Nome;
       this.Descrizione = Descrizione;
       Random rand = new Random();
-      this.Codice = rand.nextInt(90000) + 10000;
+      this.Codice = rand.nextInt(90000) ;
       this.Prezzo = prezzo;
       this.iva = iva;
    }
