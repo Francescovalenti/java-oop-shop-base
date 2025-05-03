@@ -17,13 +17,15 @@ public class Prodotto {
    }
 
   
-   public double getPrezzo() {
-      return Prezzo;
-   }
+   public String getPrezzoFormattato() {
+      return String.format("%.2f ", Prezzo);
+  }
+  
 
-   public double getPrezzoIva() {
-      return Prezzo + ((Prezzo * iva) / 100);
-   }
+  public String getPrezzoIvaFormattato() {
+   double prezzoIvato = Prezzo + (Prezzo * iva / 100.0);
+   return String.format("%.2f ", prezzoIvato);
+}
 
    public String venduta() {
       return Codice + "-" + Nome;
